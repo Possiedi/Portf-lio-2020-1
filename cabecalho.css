@@ -1,0 +1,81 @@
+/* Container */
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid black;
+}
+.cabecalho img{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+.cabecalho ul{
+    list-style: none;
+}
+.cabecalho ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* Responsivel para mobile */
+
+@media(max-width: 767px){
+    .cabecalho{
+        flex-flow: column;
+        padding: 10px;
+    }
+    .cabecalho ul{
+        margin-top: 10px;
+    }
+    .cabecalho ul li{
+        border-radius: 10px;
+        font-size: 18px;
+        margin-top: 23px;
+        text-align: center;
+    }
+}
+
+
+/* Responsivo para tablets */
+
+@media(min-width: 768px) and (max-width: 1023px){
+    .cabecalho{
+        padding: 12px;
+    }
+    .cabecalho ul li{
+        font-size: 19px;
+        display: inline;
+        margin-right: 25px;
+        border-radius: 5px;
+    }
+    .cabecalho ul li:hover{
+        cursor: pointer;
+    }
+} 
+
+
+/* Responsivo para Monitores e TVs */
+
+@media(min-width: 1024px){
+    .cabecalho{
+        padding: 12px;
+    }
+    .cabecalho img{
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+    }
+    .cabecalho ul li{
+        font-size: 20px;
+        display: inline;
+        margin-right: 40px;
+        border-radius: 5px;
+    }
+    .cabecalho ul li:hover{
+        cursor: pointer;
+    } 
+}

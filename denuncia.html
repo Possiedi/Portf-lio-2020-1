@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Denúncia</title>
+        <link rel="stylesheet" href="body.css">
+        <link rel="stylesheet" href="denuncia.css">
+    </head>
+
+    <body>
+        
+        <div class="container">
+            
+            
+
+            <main>
+                <h1>Envie sua denúncia</h1>
+                <form action="" method="POST">
+                    <ul>
+                        <li>
+                            <input type="text" name="estado" placeholder="Estado" required="required">
+                        </li>
+                        <li>
+                            <input type="text" name="cidade" placeholder="Cidade" required="required">
+                        </li>
+                        <li>
+                            <input type="text" name="bairro" placeholder="Bairro" required="required">
+                        </li>
+                        <li>
+                            <input type="text" name="rua" placeholder="Rua" required="required">
+                        </li>
+                        <li>
+                            <textarea name="text" id="text-a" cols="32" rows="5" maxlength="120" placeholder="Digite suas observações"></textarea>
+                        </li>
+                        <br>
+                        <li>
+                            <p>Clique no botão abaixo<br> para enviar uma foto</p>
+                            
+                            <input type="file" id="inp-img">
+                        </li>
+                        <li>
+                            <input type="submit" value="Enviar" id="submit-btn">
+                        </li>
+                    </ul>
+                </form>
+                <p id="menu-btn"><a href="index.html">Voltar ao menu principal</a></p>
+            </main>
+
+            <footer>
+                <p>Todos os direitos reservados 2020</p>
+            </footer>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,134 @@
+/* Container */
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "m m"
+                         "f f";
+    justify-content: center;
+}
+main{
+    background: rgb(204, 201, 201);
+    grid-area: m;
+}
+footer{
+    grid-area: f;
+}
+
+
+
+/* Items Style */
+
+main{
+    height: 490px;
+    border: solid 2px rgb(78, 73, 73);
+    border-radius: 25px;
+}
+footer p{
+    margin: 40px 0 10px 0;
+    font-size: 18px;
+}
+.container{
+    text-align: center;
+}
+.container h1{
+    font-size: 40px;
+    margin: 20px 0 35px 0;
+}
+.container main form ul li{
+    list-style: none;
+    margin: 10px;
+}
+.container main form ul li input{
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+
+/* Botão de login */
+
+#submit-btn{
+    padding: 17px;
+    font-weight: bold;
+    border-radius: 15px;
+    margin-top: 30px;
+    border: solid 2px black;
+    width: 140px;
+    height: 60px;
+}
+#submit-btn:hover{
+    background: rgb(15, 116, 15);
+    transition: 0.5s;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/* Botão do Menu Principal */
+
+.container main p{
+    margin-top: 60px;   
+}
+.container main p a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+.container main p:hover{
+    text-decoration: underline;
+}
+
+
+
+/* Responsivo para mobile */
+
+@media(max-width: 767px){
+    main{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 280px;
+    }
+    .container main p a{
+        font-size: 17px;
+    }
+}
+
+
+/* Responsivo para tablets */
+
+@media(min-width: 768px) and (max-width: 1023px){
+    main{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 500px;
+    }
+    .container main form ul li input{
+        padding: 8px;
+        font-size: 16px;
+    }
+    .container main p a{
+        font-size: 20px;
+    }
+}
+
+
+/* Responsivo para Monitores e TVs */
+
+@media(min-width: 1024px){
+    main{
+        margin-top: 10px;
+        margin-bottom: 50px;
+        width: 500px;
+    }
+    .container main form ul li input{
+        padding: 10px;
+        font-size: 18px;
+    }
+    .container main p a{
+        font-size: 20px;
+    }
+}

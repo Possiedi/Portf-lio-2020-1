@@ -1,0 +1,151 @@
+/* Container */
+
+.container{
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "m m"
+                         "f f";
+}
+main{
+    background: lightgray;
+    grid-area: m;
+}
+footer{
+    grid-area: f;
+}
+
+
+
+/* Items Style */
+
+main{
+    text-align: center;
+    border-radius: 25px;
+    margin-top: 10px;
+    border: solid 2px rgb(78, 73, 73);
+}
+.container main h1{
+    margin: 15px 0px 35px 0px;
+}
+.container main form ul{
+    list-style: none;
+}
+.container main form ul li{
+    margin: 10px;
+}
+footer{
+    margin-top: 20px;
+    text-align: center;
+}
+footer p{
+    font-size: 18px;
+    margin: 40px 0 10px 0;
+}
+
+
+
+/* Botão de enviar */
+
+#submit-btn{
+    width: 130px;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 15px;
+    margin: 65px 0px 15px 0px;
+    border: solid 2px black;
+}
+#submit-btn:hover{
+    background: rgb(15, 116, 15);
+    transition: 0.5s;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+
+
+/* Botão de enviar imagem */
+
+#inp-img{
+    width: 130px;
+}
+
+
+
+/* Botão do Menu Principal */
+
+#menu-btn{
+    text-align: center;
+    margin: 20px 20px;
+}
+#menu-btn a{
+    text-decoration: none;
+    color: black;
+    font-size: 19px; 
+}
+#menu-btn a:hover{
+    text-decoration: underline;
+}
+
+
+
+/* Responsivo para mobile */
+
+@media(max-width: 767px){
+    main{
+        width: 310px;
+    }
+    main h1{
+        font-size: 30px;
+    }
+    .container main form ul li input{
+        padding: 10px;
+        font-size: 15px;
+    }
+    #text-a{
+        font-size: 15px;
+    }
+}
+
+
+
+/* Responsivo para tablets */
+
+@media(min-width: 768px) and (max-width: 1023px){
+    main{
+        width: 410px;
+    }
+    main h1{
+        font-size: 35px;
+    }
+    .container main form ul li input{
+        padding: 10px;
+        font-size: 17px;
+    }
+    #text-a{
+        font-size: 16px;
+    }
+}
+
+
+
+/* Responsivo para Monitores e TVs */
+
+@media(min-width: 1024px){
+    main{
+        width: 500px;
+    }
+    main h1{
+        font-size: 36px;
+    }
+    .container main form ul li input{
+        padding: 12px;
+        font-size: 17px;
+    }
+    #text-a{
+        font-size: 17px;
+    }
+}
